@@ -10,7 +10,14 @@
     justify-content: space-around;
 }
 
-/*Change Navbar Toggler to only display on mobile*/
+/*Mobile Navbar*/
+@media screen and (min-width:420px) {
+    .navigation.collapse {
+        display:none;
+    }
+}
+
+/*Desktop View of navbar Remove Mobile toggler*/
 @media screen and (min-width: 768px){
     .navbar-toggler {
         display: none;
@@ -19,6 +26,12 @@
     .navigation {
         flex: 0 0 auto;
     }
+
+    ul.navigation {
+        list-style-type:none;
+    }
+
+    ul.navigation a {text-decoration:none;}
 
     .navigation.collapse {
         display: flex;
