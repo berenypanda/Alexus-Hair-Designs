@@ -10,8 +10,28 @@
     justify-content: space-around;
 }
 
+/*Change Navbar Toggler to only display on mobile*/
+@media screen and (min-width: 768px){
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navigation {
+        flex: 0 0 auto;
+    }
+
+    .navigation.collapse {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: baseline;
+        align-content: center;
+    }
+}
+
 /*Logo*/
 .logo {
     height: 30vh;
     width: auto;
 }
+
