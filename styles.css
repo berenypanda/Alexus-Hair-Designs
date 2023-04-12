@@ -3,21 +3,83 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
 
+
+:root {
+    /*Colors*/
+
+    --beige: hsl(40, 10%, 94%);
+    --silver: hsl(0, 0%, 75%);
+    --silver-hover: hsl(0, 0%, 55%);
+}
+
+#wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/*Space out Page elements*/
+
+.navbar, main, footer {margin-bottom: 10%;}
+
+/*Content Width Mobile*/
+@media screen and (max-width: 767px) {
+    #wrapper {
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+/*Content Width Desktop*/ 
+@media screen and (min-width: 768px) {
+    #wrapper {
+        margin: 0 auto;
+        width:80%;
+    }
+}
+
+
 /*Navbar Styles*/
 .navbar {
     display:flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: var(--beige);
 }
 
+
 /*Mobile Navbar*/
-@media screen and (min-width:420px) {
+@media screen and (max-width:767px) {
+    nav {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler {
+        border:none;
+        color: var(--silver-hover);
+        font-size: 150%;
+    }
+
     .navigation.collapse {
         display:none;
     }
+
+    ul.navigation {
+        list-style-type: none;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        height: 30vh;
+    }
+
+    ul.navigation a {
+        text-decoration: none;
+    }
+
 }
 
-/*Desktop View of navbar Remove Mobile toggler*/
+/*Desktop View of navbar*/
 @media screen and (min-width: 768px){
     .navbar-toggler {
         display: none;
@@ -36,15 +98,45 @@
     .navigation.collapse {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-end;
+        justify-content: space-around;
         align-items: baseline;
         align-content: center;
+        width: 40vw;
     }
 }
 
 /*Logo*/
 .logo {
     height: 30vh;
-    width: auto;
+    max-width: 30vw;
 }
 
+
+/*Call To Action */
+
+.cta {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+
+.cta img {
+    object-fit: cover;
+}
+
+.cta-button {
+    background-color: var(--silver);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cta button a {
+    text-decoration: none;
+}
+
+/*Footer*/
+footer {
+ text-align:center;
+}
