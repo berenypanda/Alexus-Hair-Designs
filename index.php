@@ -8,34 +8,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <header>
-            <img class="logo" src="placeholder.png" alt="logo">
-            <span><a href="index.html"></a></span>
-        </header>
-        <nav>
-            <button class="navbar-toggler" type="button" data-target="#navigation">
-                <span class="fa-solid fa-bars"></span>
-            </button>
-            <ul class="navigation collapse" id="navigation">
-                <li><a href="#" title="Home">Home</a></li>
-                <li><a href="#" title="Services">Services</a></li>
-                <li><a href="#" title="Portfolio">Portfolio</a></li>
-                <li><a href="#" title="Contact">Contact</a></li>
-                <li><a href="#" title="About">About</a></li>
-            </ul>
-        </nav>
-    </div>
-    <main>
-        <div class="cta">
-            <button class="cta-button"><a href=# title="Book Appointment">BOOK APPOINTMENT</a></button>
-            <img class="cta-img" src="placeholder.png" alt="Alexus Hair Designs Image">
+    <div id="wrapper">
+        <div class="navbar">
+            <header>
+                <img class="logo" src="placeholder.png" alt="logo">
+                <span><a href="index.html"></a></span>
+            </header>
+            <nav>
+                <ul class="navigation collapse" id="navigation">
+                    <li><a href="#" title="Home">Home</a></li>
+                    <li><a href="#" title="Services">Services</a></li>
+                    <li><a href="#" title="Portfolio">Portfolio</a></li>
+                    <li><a href="#" title="Contact">Contact</a></li>
+                    <li><a href="#" title="About">About</a></li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-target="#navigation">
+                    <span class="fa-solid fa-bars"></span>
+                </button>
+            </nav>
         </div>
-    </main>
-    <footer>
-        <div class="social-media"></div>
-        <p>Alexus Hair Designs &copy;2023</p>
-    </footer>
+        <main>
+            <div class="cta">
+                <button class="cta-button"><a href=# title="Book Appointment">BOOK APPOINTMENT</a></button>
+                <img class="cta-img" src="placeholder.png" alt="Alexus Hair Designs Image">
+            </div>
+        </main>
+        <footer>
+            <div class="social-media"></div>
+            <p>Alexus Hair Designs &copy;2023</p>
+        </footer>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
+
