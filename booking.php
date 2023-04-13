@@ -29,7 +29,7 @@
     <br/>
     <br/>
     Comment: <br/><textarea name="comment" rows="5" cols="40"></textarea><br>
-    <input type="Submit" name="SubmitThis" value="Preview">
+    <input class="booking-button" type="Submit" name="SubmitThis" value="Preview">
 </form>
 <?php print $footer ?>
 </div>
