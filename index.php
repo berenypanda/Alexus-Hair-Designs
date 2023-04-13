@@ -12,7 +12,7 @@
 </head>
 <body>
         <?php print $navbar?>
-        <div class=wrapper>
+        <div class="wrapper">
         <main>
             <div class="cta">
                 <div class="cta-text col-lg-6">
@@ -33,5 +33,6 @@
     <script src="app.js"></script>
 </body>
 </html>
+
 
 
