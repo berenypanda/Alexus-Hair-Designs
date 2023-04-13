@@ -4,7 +4,7 @@
 //Define navbar component
 	
 $navbar = 
-"<div class='navbar'>
+"<div class='navbar col-xs-12'>
     <header class='col-xs-6 col-lg-4'>
     <a href='index.php'><img class='logo' src='logo.png' alt='logo'></a>
     </header>
@@ -22,10 +22,27 @@ $navbar =
     </nav>
 </div>";
 
-//define footer component
+//define Footer component
 $footer = "<footer>
-<div class='social-media'></div>
+
+<div class='social-media'>
+<i class='fa-brands fa-facebook-f'></i>
+<i class='fa-brands fa-instagram'></i>
+<i class='fa-brands fa-tiktok'></i>
+<i class='fa-brands fa-pinterest'></i>
+</div>
+
+<div class='footer-contact'>
+    <div class='phone-number'>
+      <i class='fa-solid fa-phone'></i><span><p>(123)-456-7890</p></span>
+    </div>
+    <div class='email'>
+      <i class='fa-solid fa-envelope'></i><span><p>email@address.com</p></span>
+    </div>
+</div>
+
 <p>Alexus Hair Designs &copy;2023</p>
+
 </footer>";
 
 
