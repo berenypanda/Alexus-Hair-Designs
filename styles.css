@@ -2,7 +2,8 @@
 /*Import Icon Library*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
-
+/*Import Google Fonts*/
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
 
 :root {
     /*Colors*/
@@ -12,7 +13,199 @@
     --black: #1a1718;
     --silver: hsl(0, 0%, 75%);
     --silver-hover: hsl(0, 0%, 55%);
+    /* Grid */
+    --number-of-columns: 12;
+    --grid-width: calc(100% / var(--number-of-columns));
+    --col-1: calc(var(--grid-width) * 1);
+    --col-2: calc(var(--grid-width) * 2);
+    --col-3: calc(var(--grid-width) * 3);
+    --col-4: calc(var(--grid-width) * 4);
+    --col-5: calc(var(--grid-width) * 5);
+    --col-6: calc(var(--grid-width) * 6);
+    --col-7: calc(var(--grid-width) * 7);
+    --col-8: calc(var(--grid-width) * 8);
+    --col-9: calc(var(--grid-width) * 9);
+    --col-10: calc(var(--grid-width) * 10);
+    --col-11: calc(var(--grid-width) * 11);
+    --col-12: calc(var(--grid-width) * 12);
 }
+
+/*Grid System */
+
+
+/*Mobile Grid*/
+
+.col-xs-1 {
+    flex: 0 0 var(--col-1);
+    min-width: var(--col-1);
+    max-width: var(--col-1);
+   
+}
+
+.col-xs-2 {
+    flex: 0 0 var(--col-2);
+    min-width: var(--col-2);
+    max-width: var(--col-2);
+    
+}
+
+.col-xs-3 {
+    flex: 0 0 var(--col-3);
+    min-width: var(--col-3);
+    max-width: var(--col-3);
+    
+}
+
+.col-xs-4 {
+    flex: 0 0 var(--col-4);
+    min-width: var(--col-4);
+    max-width: var(--col-4);
+    
+}
+
+.col-xs-5{
+    flex: 0 0 var(--col-5);
+    min-width: var(--col-5);
+    max-width: var(--col-5);
+ 
+}
+
+.col-xs-6 {
+    flex: 0 0 var(--col-6);
+    min-width: var(--col-6);
+    max-width: var(--col-6);
+    
+}
+
+.col-xs-7 {
+    flex: 0 0 var(--col-7);
+    min-width: var(--col-7);
+    max-width: var(--col-7);
+    
+}
+
+.col-xs-8 {
+    flex: 0 0 var(--col-8);
+    min-width: var(--col-8);
+    max-width: var(--col-8);
+    
+}
+
+.col-xs-9 {
+    flex: 0 0 var(--col-9);
+    min-width: var(--col-9);
+    max-width: var(--col-9);
+    
+}
+
+.col-xs-10 {
+    flex: 0 0 var(--col-10);
+    min-width: var(--col-10);
+    max-width: var(--col-10);
+    
+}
+
+.col-xs-11 {
+    flex: 0 0 var(--col-11);
+    min-width: var(--col-11);
+    max-width: var(--col-11);
+    
+}
+
+.col-xs-12 {
+    flex: 0 0 var(--col-12);
+    min-width: var(--col-12);
+    max-width: var(--col-12);
+}
+
+/*Tablet and Desktop Grid*/
+@media screen and (min-width: 768px){
+    .col-lg-1 {
+        flex: 0 0 var(--col-1);
+        min-width: var(--col-1);
+        max-width: var(--col-1);
+       
+    }
+    
+    .col-lg-2 {
+        flex: 0 0 var(--col-2);
+        min-width: var(--col-2);
+        max-width: var(--col-2);
+       
+    }
+    
+    .col-lg-3 {
+        flex: 0 0 var(--col-3);
+        min-width: var(--col-3);
+        max-width: var(--col-3);
+        
+    }
+    
+    .col-lg-4 {
+        flex: 0 0 var(--col-4);
+        min-width: var(--col-4);
+        max-width: var(--col-4);
+        
+    }
+    
+    .col-lg-5{
+        flex: 0 0 var(--col-5);
+        min-width: var(--col-5);
+        max-width: var(--col-5);
+       
+    }
+    
+    .col-lg-6 {
+        flex: 0 0 var(--col-6);
+        min-width: var(--col-6);
+        max-width: var(--col-6);
+        
+    }
+
+    .col-lg-7 {
+        flex: 0 0 var(--col-7);
+        min-width: var(--col-8);
+        max-width: var(--col-7);
+        
+    }
+
+    .col-lg-8 {
+        flex: 0 0 var(--col-8);
+        min-width: var(--col-8);
+        max-width: var(--col-8);
+        
+    }
+
+    .col-lg-9 {
+        flex: 0 0 var(--col-9);
+        min-width: var(--col-9);
+        max-width: var(--col-9);
+        
+    }
+
+    .col-lg-10 {
+        flex: 0 0 var(--col-10);
+        min-width: var(--col-10);
+        max-width: var(--col-10);
+        
+    }
+
+    .col-lg-11 {
+        flex: 0 0 var(--col-11);
+        min-width: var(--col-11);
+        max-width: var(--col-11);
+        
+    }
+
+    .col-lg-12 {
+        flex: 0 0 var(--col-12);
+        min-width: var(--col-12);
+        max-width: var(--col-12);
+        
+    }
+}
+
+/*End of Grid System*/
 
 #wrapper {
     display: flex;
@@ -32,9 +225,10 @@
     width: 80%;
 }
 
-/*All Text Black unless specified*/
+/*All Text Black and Open Sans unless specified*/
 body {
     color: var(--black);
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -63,12 +257,14 @@ ul.navigation a:visited {
     color: var(--black);
 }
 
+.logo {max-height: 30vh;}
 
 /*Mobile Navbar*/
 @media screen and (max-width:767px) {
     nav {
         display: flex;
         align-items: flex-start;
+        justify-content: flex-end;
     }
 
     .navbar-toggler {
@@ -104,6 +300,7 @@ ul.navigation a:visited {
 
     ul.navigation {
         list-style-type:none;
+        width: 100%;
     }
 
     .navigation.collapse {
@@ -116,11 +313,7 @@ ul.navigation a:visited {
     }
 }
 
-/*Logo*/
-.logo {
-    height: 30vh;
-    max-width: 30vw;
-}
+
 
 
 /*Call To Action */
@@ -135,19 +328,12 @@ ul.navigation a:visited {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    height: 100%;
-    width: 100%;
-}
-
-.cta .img-holder {
-    height: 400px;
-    width: 400px;
+    
 }
 
 .img-holder .cta-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    max-height:100%;
+    max-width: 100%;
 }
 
 .cta-button {
@@ -188,12 +374,33 @@ ul.navigation a:visited {
 /*Booking Form Styles*/ 
 
 form {
-    border: 2px solid var(--black);
-    background-color: var(--beige);
-    padding: 10px;
+    border: 1px solid var(--silver);
+    padding: 5%;
+    border-radius: 15px;
+}
+
+form h2 {
+    text-align:center;
+    font-style:italic;
+}
+
+.booking-button {
+    border: none;
+    border-radius: 5%;
+    background-color: var(--silver);
+    color: var(--white);
+    padding: 5px;
+}
+
+/*Form Control*/
+ 
+textarea, input {
+    max-width: 100%;
 }
 
 /*Footer*/
 footer {
  text-align:center;
+ font-style: italic;
 }
+
