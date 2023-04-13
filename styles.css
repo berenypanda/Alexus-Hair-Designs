@@ -7,7 +7,9 @@
 :root {
     /*Colors*/
 
-    --beige: hsl(40, 10%, 94%);
+    --beige: #faf0e6;
+    --white: #fefdfc;
+    --black: #1a1718;
     --silver: hsl(0, 0%, 75%);
     --silver-hover: hsl(0, 0%, 55%);
 }
@@ -23,19 +25,16 @@
 
 .navbar, main, footer {margin-bottom: 10%;}
 
-/*Content Width Mobile*/
-@media screen and (max-width: 767px) {
-    #wrapper {
-        margin: 0 auto;
-        width: 95%;
-    }
+/*Content Width*/
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
 }
-/*Content Width Desktop*/ 
-@media screen and (min-width: 768px) {
-    #wrapper {
-        margin: 0 auto;
-        width:80%;
-    }
+
+/*All Text Black unless specified*/
+body {
+    color: var(--black);
 }
 
 
@@ -43,8 +42,25 @@
 .navbar {
     display:flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--beige);
+    align-items: center;
+    font-size: 150%;
+}
+
+ul.navigation a  {
+    text-decoration: none;
+    color: var(--black);
+    transition: border-bottom 2s ease-out 100ms;
+}
+
+ul.navigation a:hover {
+    border-bottom: 2px solid var(--black);
+    font-style: bold;
+}
+
+ul.navigation a:visited {
+    color: var(--black);
 }
 
 
@@ -57,7 +73,8 @@
 
     .navbar-toggler {
         border:none;
-        color: var(--silver-hover);
+        color: var(--black);
+        background-color: var(--beige);
         font-size: 150%;
     }
 
@@ -71,10 +88,6 @@
         flex-flow: column wrap;
         justify-content: space-evenly;
         height: 30vh;
-    }
-
-    ul.navigation a {
-        text-decoration: none;
     }
 
 }
@@ -93,15 +106,13 @@
         list-style-type:none;
     }
 
-    ul.navigation a {text-decoration:none;}
-
     .navigation.collapse {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: baseline;
         align-content: center;
-        width: 40vw;
+        width: 65vw;
     }
 }
 
@@ -120,8 +131,22 @@
     justify-content: space-evenly;
 }
 
+.cta-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
 
-.cta img {
+.cta .img-holder {
+    height: 400px;
+    width: 400px;
+}
+
+.img-holder .cta-img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -132,8 +157,40 @@
     padding: 20px;
 }
 
-.cta button a {
+.cta-button a {
     text-decoration: none;
+    color: var(--white);
+    transition: border-bottom 2s ease-out 100ms;
+}
+
+.cta-button a:visited {
+    color:var(--white);
+}
+
+
+.cta-button:hover {
+    background-color: var(--silver-hover);
+}
+
+.cta-button a:hover {
+    border-bottom: 2px solid var(--white);
+}
+
+/*Mobile CTA Styles */
+
+@media screen and (max-width: 767px) {
+    .cta {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+/*Booking Form Styles*/ 
+
+form {
+    border: 2px solid var(--black);
+    background-color: var(--beige);
+    padding: 10px;
 }
 
 /*Footer*/
