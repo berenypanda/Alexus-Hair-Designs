@@ -1,6 +1,13 @@
-
+=
 /*Import Icon Library*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/*Icon Styles*/
+.fa-brands, .fa-solid {
+    color: var(--black);
+    font-size: 200%;
+
+}
 
 /*Import Google Fonts*/
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
@@ -398,9 +405,54 @@ textarea, input {
     max-width: 100%;
 }
 
+/*Preview Form*/
+
+table {
+    border: 1px solid var(--silver);
+    width: 100%;
+}
+
+tbody {
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+
+}
+
+th {
+    border-right: 1px solid var(--silver);
+    background-color:silver;
+    color: var(--white);
+}
+
+td {color: var(--black);}
 /*Footer*/
+
 footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+footer p {
  text-align:center;
  font-style: italic;
 }
+
+.social-media, .footer-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.phone-number, .email {
+    display:flex;
+}
+
+
+
+
 
