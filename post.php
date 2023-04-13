@@ -28,14 +28,11 @@ if (array_key_exists("SubmitThis", $_POST)) {
 	}
 	if (empty($missing)){
 
-		$service = implode(", ", $service); //stuck here
-
-
 		if (!empty($email)) {
 			$name = "<a href='mailto:$email'>$name</a>";
 		}
 
-        $output = "<table class = $class border = '1'>\n>
+        $output = "<table>\n 
 				<tr>
 					<th>Name:</th>
 					<td> $name</td>
@@ -91,5 +88,8 @@ if (array_key_exists("SubmitThis", $_POST)) {
 
 <?php print $footer ?>
 </div>
+
+<script src="app.js"></script>
+
 </BODY>
 </HTML>
