@@ -1,3 +1,4 @@
+<?php include ('shared.php') ?>
 <?php
 if (array_key_exists("SubmitThis", $_POST)) {
     $required = array('name', 'email','service');
@@ -68,5 +69,27 @@ if (array_key_exists("SubmitThis", $_POST)) {
 	$output = "Please post your message use <a href='index.php'>this form</a>.";
 }
 
-
 ?>
+
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE> Form Submission - Alexus Hair Designs</TITLE>
+<link rel="stylesheet" href="styles.css">
+</HEAD>
+
+<BODY>
+<?php print $navbar ?>
+<div class="wrapper">
+<h2>Preview Your Message</h2>
+
+<hr size="1">
+
+<p>
+	<?php echo $output ?>
+</p>
+
+<?php print $footer ?>
+</div>
+</BODY>
+</HTML>
