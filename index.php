@@ -1,3 +1,6 @@
+<?php
+	include ('shared.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,36 +11,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="wrapper">
-        <div class="navbar">
-            <header>
-                <img class="logo" src="placeholder.png" alt="logo">
-                <span><a href="index.html"></a></span>
-            </header>
-            <nav>
-                <ul class="navigation collapse" id="navigation">
-                    <li><a href="#" title="Home">Home</a></li>
-                    <li><a href="#" title="Services">Services</a></li>
-                    <li><a href="#" title="Portfolio">Portfolio</a></li>
-                    <li><a href="#" title="Contact">Contact</a></li>
-                    <li><a href="#" title="About">About</a></li>
-                </ul>
-                <button class="navbar-toggler" type="button" data-target="#navigation">
-                    <span class="fa-solid fa-bars"></span>
-                </button>
-            </nav>
-        </div>
+        <?php print $navbar?>
+        <div class=wrapper>
         <main>
             <div class="cta">
-                <button class="cta-button"><a href=# title="Book Appointment">BOOK APPOINTMENT</a></button>
-                <img class="cta-img" src="placeholder.png" alt="Alexus Hair Designs Image">
+                <div class="cta-text">
+                <div class="slogan">
+                <h2>Get great hair without leaving your home.</h2>
+                <p>Sign up now for our mobile salon to visit you!</p> 
+                </div>
+                <button class="cta-button"><a href="booking.php" title="Book Appointment">BOOK APPOINTMENT</a></button>
+                </div>
+                <div class="img-holder">
+                <img class="cta-img" src="cta-img.jpg" alt="Alexus Hair Designs Image">
+                </div>
             </div>
         </main>
-        <footer>
-            <div class="social-media"></div>
-            <p>Alexus Hair Designs &copy;2023</p>
-        </footer>
-    </div>
+        </div>
+    <?php print $footer?>
+
     <script src="app.js"></script>
 </body>
 </html>
